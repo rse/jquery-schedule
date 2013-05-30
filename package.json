@@ -1,0 +1,31 @@
+{
+    "name":        "jquery-schedule",
+    "version":     "1.0.1",
+    "description": "jQuery Schedule provides scheduled/deferred actions on DOM elements",
+    "main":        "jquery.schedule.js",
+    "scripts": {
+        "test": "grunt"
+    },
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/rse/jquery-schedule.git"
+    },
+    "author": {
+        "name":  "Ralf S. Engelschall",
+        "email": "rse@engelschall.com",
+        "url":   "http://engelschall.com"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url":  "http://opensource.org/licenses/MIT"
+    }],
+    "homepage": "https://github.com/rse/jquery-schedule",
+    "bugs":     "https://github.com/rse/jquery-schedule/issues",
+    "devDependencies": {
+        "grunt":                "~0.4.1",
+        "grunt-cli":            "~0.1.8",
+        "grunt-contrib-jshint": "~0.4.3",
+        "grunt-contrib-uglify": "~0.2.0",
+        "grunt-contrib-clean":  "~0.4.1"
+    }
+}
