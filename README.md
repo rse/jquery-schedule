@@ -28,6 +28,27 @@ Synopsis
        });
     </script>
 
+API
+---
+
+   ctx = $.schedule({
+       id:      null,         /* unique identifier of high-level schedule */
+       time:    1000,         /* time in milliseconds after which the task is run */
+       repeat:  false,        /* whether schedule should be automatically repeated */
+       protect: false,        /* whether schedule should be protected from double scheduling */
+       obj:     null,         /* function context object ("this") */
+       func:    function(){}, /* function to call */
+       args:    []            /* function arguments to pass */
+   })
+
+   ctx = $.schedule([time [, repeat], ]{{ obj, methodname } | func}[, arg, ...])
+
+   $.reschedule(ctx)
+
+   $.cancel(ctx)
+
+   ctx = $([...]).schedule([...])
+
 Building jQuery Schedule
 ------------------------
 
